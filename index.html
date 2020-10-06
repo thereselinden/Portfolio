@@ -20,24 +20,37 @@
         "Project manager with coding skills". It's your portfolio. 
         Choose images so that they mirror who you are.---->
         <section class="social-icons-top">
-            <i class="fa fa-linkedin"></i> 
-            <span class="sr-only">LinkedIn</span>
-            <i class="fa fa-github"></i>   
-            <span class="sr-only">GitHub</span>
+            <a href="https://www.linkedin.com/in/therese-lindén-08569592" target="blank" class="icon-wrapper"> <!---norefferal, remove the class???--->
+                <!--<img src="images/iconmonstr-linkedin-1/iconmonstr-linkedin-1.png" alt="LinkedIn symbole">--->
+                <i class="fa fa-linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="https://github.com/thereselinden" target="blank" class="icon-wrapper">
+                <!---<img src="./images/github/github.png" alt="GitHub symbole">-->
+                <i class="fa fa-github"></i> 
+                <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://github.com/thereselinden" target="blank" class="icon-wrapper">
+                <!---<img src="./images/github/github.png" alt="GitHub symbole">-->
+                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                <span class="sr-only">Stack Overflow</span>
+            </a>
         </section>
+
         <section class="main-content">
-            <p>Portfolio: Therese Lindén</p>
-            <h1>Frontend developer</h1>
-            <h2>with background in banking</h2> 
+            <p tabindex="0">Portfolio: Therese Lindén </p>
+            <h1 tabindex="0">Frontend developer</h1>
+            <h2 tabindex="0">with background in banking</h2> 
         </section>
-        <img src="" alt="profile picture of Therese Lindén">
+        <img tabindex="0" src="./images/profile-picture.jpg" alt="profile picture of Therese Lindén">
+        <!----use picture tag instead---->
     </header>
    
 
     <main>
         <section class="summary-section"> 
             <span></span><span></span> <!---to create the read line and dot----->
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            <p tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                 Adipisci et nulla veritatis rerum magnam accusamus dolor sunt odit dolore quos similique corrupti
                 dolorem amet soluta nemo, error doloremque delectus. Ut.</p>
             <!----This is the section where you summarise what you have been doing in the 
@@ -50,9 +63,9 @@
                 <!---Give a short summary/name dropping of all the technologies, tools, 
             libraries and things that you know and will know during this course. 
             It's really the more the merrier here. ---->
-            <h3 class="tech-text">Tech</h3>
+            <h3 tabindex="0" class="tech-text">Tech</h3>
             <div class="tech-methods"> <!---Do I need to have a class here? or just a p tag?---->
-                <p>HTML, CSS, Flexbox, JavaScript, ES6, React, Redux, Node.js, Web Accessability, API:s, Mob-programming, 
+                <p tabindex="0">HTML, CSS, Flexbox, JavaScript, ES6, React, Redux, Node.js, Web Accessability, API:s, Mob-programming, 
                     Pair-programming, GitHub </p>
             </div>
         </section>
@@ -69,71 +82,61 @@
             headline and 
             text. ---->
             <h3 class="featured-project-text">Featured projects</h3>
-            <div class="project-wrapper">
+            <article class="project-wrapper">
                 <a href="https.google.se" target="blank" class="projects" > <!---Is this were we enter an area tag?---->
-                    <div class="overlay">
-                        <img src="./images/profile-picture.jpg" alt/>   
-                        <!---Is this where we have the overlay? "sunny side up"---->
-                        <p>Sunny side up</p>
+                    <div class="container">
+                        <img src="./images/profile-picture.jpg" alt="" class="image"/>   
+                        <div class="overlay">
+                            <p>Sunny side up</p>
+                        </div>
                     </div>
                     <div class="project-description">
-                        <span>Weather App.</span> <!---change to h4???---->
-                        Web app build in Javascript using open weather API <!---use a p tag??--->
-                        <i class="arrow">>></i>
+                        <p>
+                            <span class="header">Weather App.</span> 
+                            Web app built in Javascript using open weather API
+                            <span class="arrow"> >></span>
+                        </p> 
                     </div>
-                    <div class="method-wrapper">
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>  
                 </a>
-                <a href="https.google.se" target="blank" class="projects" >
-                    <img src="./images/profile-picture.jpg" alt/>   
-                    <div class="project-description"><span>Cluedo game.</span> 
-                        Description of project, keep it short
-                        <i class="arrow">>></i>
+                <div class="method-wrapper">
+                    <h5>HTML5</h5>
+                    <h5>CSS</h5>
+                    <h5>JavaScript</h5>
+                </div>  
+                
+                <a href="https.google.se" target="blank" class="projects" > <!---Is this were we enter an area tag?---->
+                    <div class="container">
+                        <img src="./images/profile-picture.jpg" alt="" class="image"/>   
+                        <div class="overlay">
+                            <p>Sunny side up</p>
+                        </div>
                     </div>
-                    <div class="method-wrapper">
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>  
-                </a> 
-                <a href="https.google.se" target="blank" class="projects" >
-                    <img src="./images/profile-picture.jpg" alt/>   
-                    <div class="project-description"><span>Weather App.</span> 
-                        Description of project, keep it short
-                        <i class="arrow">>></i>
+                    <div class="project-description">
+                        <p>
+                            <span class="header">Cluedo game.</span> 
+                            Description of project, keep it short
+                            <span class="arrow"> >></span>
+                        </p> 
                     </div>
-                    <div class="method-wrapper">
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>  
                 </a>
-                <a href="https.google.se" target="blank" class="projects" >
-                    <img src="./images/profile-picture.jpg" alt/>   
-                    <div class="project-description"><span>Weather App.</span> 
-                        Description of project, keep it short
-                        <i class="arrow">>></i>
-                    </div>
-                    <div class="method-wrapper">
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>  
-                </a>
+                <div class="method-wrapper">
+                    <h5>HTML5</h5>
+                    <h5>CSS</h5>
+                    <h5>JavaScript</h5>
+                </div>  
+
+            
                 <h3 class="other-projects-text">Other projects</h3>
                 <div class="other-projects-wrapper">
                     <div class="project-description"><span>Weather App.</span> 
                         Description of project, keep it short
                         <i class="arrow">>></i>
                     </div>
-                    <div class="method-wrapper">
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>  
+                <div class="method-wrapper">
+                    <span>HTML5</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>  
                 </div>  
                 <div class="other-projects-wrapper">
                     <div class="project-description"><span>Weather App.</span> 
@@ -157,7 +160,7 @@
                         <span>JavaScript</span>
                     </div>  
                 </div> 
-            </div>
+            </article>
         </section>
     
         <section class="other-projects">
@@ -216,7 +219,7 @@
     </main>
      
     <Footer>
-        <h5>Contact</h5>
+        <h4>Contact</h4>
         <address>
             <p>Therese Lindén</p>
             <p>+46 76 11 06 338</p>

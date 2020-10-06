@@ -1,7 +1,7 @@
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;*/
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -14,7 +14,7 @@ h1,h2 {
     margin-top: 15px;
     /*font-family: 'Montserrat';*/
     font-weight: bold;
-    width: 80%;
+    /*width: 80%;*/
 }
 
 h2 {
@@ -32,17 +32,7 @@ h3 {
     padding: 10px 15px;
 }
 
-/*instead of weather app green text??
 h4 {
-    color: #104F2C;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-weight: bold;
-}
-*/
-
-
-h5 {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -54,37 +44,53 @@ h5 {
     padding: 10px 15px;
 }
 
+h5 {
+    background: #FDDFE7;
+    padding: 8px 12px;    
+    border-radius: 3px;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
 p {
     font-size: 16px;
     font-family: 'Roboto';
     font-weight: regular;
+    /*width: 80%;*/
 }
 
-.top-section {
+header {
     background-image: url('./images/nature-hero.jpg');
     background-size: cover;
-    height: 508px;
+    height: 60vh;
     width: auto;
     color: #fff;   
     display: flex;
     flex-direction: column;
     justify-content: center; 
     position: relative;
+    /*
+    background-image: url(./assets/sky-day.jpg); 
+    background-repeat: no-repeat; 
+    background-attachment: local; 
+    background-position-x: center; 
+    background-position-y: 60%;*/
 }
 
 .social-icons-top {
     display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
     margin: 20px;
 }
 
-i {
-    border: 3px solid white;
+.fa {
+    font-size: 20px;
+    color: #fff;
+    border: 3px solid #fff;
     border-radius: 50%;
-    height: 15px;
-    width: 15px;
     padding: 10px;
-    margin-right: 5px;
+    margin-right: 5px;  
 }
 
 .main-content {
@@ -92,16 +98,16 @@ i {
 }
 
 .top-section img {
-    background-image: url(./images/profile-picture.jpg);
+    /*background-image: url(./images/profile-picture.jpg);
     background-size: cover;
-    background-position: center;
-    width: 100px;
-    height: 100px;
+    background-position: center;*/
+    width: 162px;
+    height: 162px;
     border: 3px solid;
     border-radius: 50%;
     position: absolute;
-    right: -3px;
-    bottom: -54px;
+    right: 20px;
+    bottom: -20px;
 }
 
 .summary-section {
@@ -142,6 +148,7 @@ i {
     all: unset;
     color: #104F2C;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .featured-projects {
@@ -149,6 +156,7 @@ i {
     font-family: 'Montserrat';
     display: flex;
     flex-direction: column;
+    padding: 40px;
 }
 
 
@@ -164,21 +172,51 @@ i {
     display: flex;
     flex-wrap: wrap;
     /* justify-content: center; */
-    align-self: center;
-    width: 80%;
+    /*align-self: center;*/
+    width: 100%;
+    /*width: 80%;*/
+    /*remove and add in the featured-project-text*/
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 180px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    background: rgb(99 96 96 / 50%);
+    background: rgba;
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 40px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*width: 100%;*/
+    /*margin-bottom: 40px;*/
     text-decoration: none;
     color: #000000;
 }
 
 img {
     height: 180px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -197,7 +235,7 @@ img {
 
 .method-wrapper {
     display: flex;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .method-wrapper span {
@@ -264,6 +302,7 @@ img {
     justify-content: center;
     align-items: center;
     border: 3px solid #104F2C;
+    color: #104F2C;
     border-radius: 50%;
     height: 45px;
     width: 45px;

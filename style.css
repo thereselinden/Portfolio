@@ -40,12 +40,6 @@ h3 {
 }
 
 h4 {
-	color: #104f2c;
-	font-size: 17px;
-	line-height: 29px;
-}
-
-h5 {
 	display: flex;
 	justify-content: center;
 	align-self: center;
@@ -160,9 +154,6 @@ header img {
 .summary p {
 	text-indent: 50px;
 	position: relative;
-	/*font-size: 17px;*/
-	/*max-width: 60%;*/
-	/*font-weight: 400;*/
 }
 
 /*
@@ -299,14 +290,14 @@ img {
 }
 
 .arrow {
-	/*all: unset;
-	color: #104f2c;
-	font-weight: bold;*/
 	text-decoration: underline;
+	font-weight: bold;
+	color: #104f2c;
 }
 
 /*FEAUTRED PROJECT STYLING*/
-.project-description {
+.project-description,
+.other-project-wrapper {
 	margin-top: 20px;
 	line-height: 1.4;
 	font-family: 'Roboto', sans-serif;
@@ -320,7 +311,7 @@ img {
 
 .tag-wrapper {
 	display: flex;
-	margin: 10px 0 50px 0;
+	margin: 10px 0 30px 0;
 	width: 100%;
 }
 
@@ -389,7 +380,13 @@ img {
 .all-skills-wrapper {
 	display: flex;
 	width: 100%;
-	/*max-width: 60%;*/
+}
+
+.all-skills-wrapper span {
+	color: #104f2c;
+	font-size: 17px;
+	line-height: 29px;
+	font-weight: bold;
 }
 
 ul {
@@ -494,5 +491,9 @@ address a {
 		margin: 25px;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.project-description {
+		height: 90px;
 	}
 }

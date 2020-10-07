@@ -11,14 +11,15 @@ body {
 }
 
 h1 {
-	margin-top: 15px;
+	margin: 15px 0 0 0;
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 49px;
+	width: 50%;
 }
 
 h2 {
-	margin-top: 0;
+	margin: 0;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 29px;
@@ -57,7 +58,6 @@ h5 {
 
 p {
 	font-size: 17px;
-	/*font-weight: regular;*/
 	line-height: 29px;
 }
 
@@ -65,18 +65,27 @@ p {
 header {
 	background-image: url('./images/forest-hero.jpg');
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: local;
+	/*background-repeat: no-repeat;
+	background-attachment: local;*/
 	background-position-x: center;
 	background-position-y: 60%;
-	height: 60vh;
-	padding-top: 60px;
+	height: 508px;
+	/*padding-top: 60px;*/
 	width: auto;
 	color: #fff;
 	display: flex;
+	/*flex-direction: column;
+	justify-content: flex-start;*/
+}
+
+.header-wrapper {
+	margin-top: -100px;
+	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	/*justify-content: center;*/
+	align-self: center;
 	position: relative;
+	width: 90%;
 }
 
 .social-icons-top {
@@ -95,7 +104,14 @@ header {
 }
 
 .main-content {
-	margin-left: 40px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+}
+
+.main-content p {
+	margin: 0;
 }
 
 .name {
@@ -109,27 +125,41 @@ header img {
 	border: 3px solid;
 	border-radius: 50%;
 	position: absolute;
-	right: 20px;
-	bottom: -20px;
+	right: 12px;
+	bottom: -195px;
 	z-index: 100;
 }
 
-/*DESCRIPTION/SUMMARY SECTION*/
-.summary-section {
-	background: #f1f2f3;
-	/*display: flex;
-	justify-content: center;*/
-	padding: 58px 40px;
-	position: relative;
+/*MAIN SECTIONS*/
+.main-wrapper {
+	padding: 60px 40px;
+	display: flex;
+	flex-direction: column;
 }
 
-.summary-section p {
+/*DESCRIPTION/SUMMARY SECTION*/
+.summary {
+	position: relative;
+	background: #f1f2f3;
+}
+
+/*.summary-section {
+	background: #f1f2f3;
+	/*display: flex;
+	justify-content: center;
+	padding: 58px 40px;
+	position: relative;
+}*/
+
+.summary p {
 	text-indent: 50px;
+	position: relative;
 	/*font-size: 17px;*/
 	/*max-width: 60%;*/
 	/*font-weight: 400;*/
 }
 
+/*
 figure {
 	width: 40px;
 	height: 10px;
@@ -140,13 +170,16 @@ figure {
 	top: 68px;
 	left: 42px;
 }
+*/
 
 .line {
 	background: #104f2c;
 	width: 30px;
 	height: 2px;
-	/* color: #104f2c; */
-	margin-bottom: 1px;
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	left: 0px;
 }
 
 .dot {
@@ -154,18 +187,23 @@ figure {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	top: 11px;
+	left: 30px;
 }
 
 /*TECH KNOWLEDGE*/
-.tech-knowledge {
-	/*font-family: 'Montserrat';*/
+
+/*.tech-knowledge {
 	padding: 40px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 }
+*/
 
-.tech-text {
+.tech-heading {
 	background-color: #104f2c;
 	width: 65px;
 	color: #fff;
@@ -183,16 +221,24 @@ figure {
 }
 
 /*FEATURED PROJECT SECTION*/
+
+.featured,
+.other,
+.skills {
+	background: #f1f2f3;
+}
+
+/*
 .featured-projects,
 .other-projects {
 	background-color: #f1f2f3;
-	font-family: 'Montserrat';
 	display: flex;
 	flex-direction: column;
 	padding: 40px;
 }
+*/
 
-.featured-project-text {
+.featured-heading {
 	background-color: #104f2c;
 	width: 260px;
 	margin-bottom: 40px;
@@ -204,7 +250,6 @@ figure {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	/*remove and add in the featured-project-text????*/
 }
 
 .a-wrapper {
@@ -234,7 +279,6 @@ img {
 	/*background: rgb(99 96 96 / 50%);*/
 	background: rgba(0, 0, 0, 0.38);
 	opacity: 1;
-	color: rgb(104, 104, 104);
 	font-size: 20px;
 	text-align: center;
 	width: 100%;
@@ -249,9 +293,9 @@ img {
 }
 
 .arrow {
-	all: unset;
+	/*all: unset;
 	color: #104f2c;
-	font-weight: bold;
+	font-weight: bold;*/
 	text-decoration: underline;
 }
 
@@ -262,25 +306,19 @@ img {
 	font-family: 'Roboto', sans-serif;
 }
 
-.project-description span {
+.project-title {
 	color: #104f2c;
 	text-transform: uppercase;
 	font-weight: bold;
 }
 
-.method-wrapper {
+.tag-wrapper {
 	display: flex;
 	margin: 10px 0 50px 0;
 	width: 100%;
 }
 
-/*
-.method-wrapper:nth-child(2) {
-	margin-bottom: 20px;
-}
-*/
-
-.method-wrapper p {
+.tag-wrapper p {
 	background: #fddfe7;
 	padding: 1px 8px;
 	border-radius: 3px;
@@ -291,43 +329,52 @@ img {
 }
 
 /*OTHER PROJECTS STYLING*/
-.other-projects-text {
+.other-heading {
 	width: 260px;
 	color: #104f2c;
 }
 
-/*
 .other-projects-wrapper {
-    /*max-width: 60%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	/*padding: 40px;*/
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+/*MY THOUGHTS STYLING*/
+
+/*.my-thoughts {
+	padding: 40px;
 }
 */
 
-/*MY THOUGHTS STYLING*/
-.my-thoughts {
-	padding: 40px;
-}
-
-.my-thoughts-text {
+.thoughts-heading {
 	background-color: #104f2c;
 	width: 260px;
 	margin-bottom: 40px;
 	color: #fff;
 }
 
-.my-thoughts img {
-	width: 100%;
-	height: 180px;
+.thoughts img {
+	width: 301px;
+	height: 205px;
 }
 
 /*SKILLS STYLING*/
-.skills {
+/*.skills {
 	background-color: #f1f2f3;
 	display: flex;
 	flex-direction: column;
 	padding: 40px;
-}
+}*/
 
-.skills-text {
+.skills-heading {
 	background-color: #104f2c;
 	width: 80px;
 	margin-bottom: 20px;
@@ -349,13 +396,14 @@ ul {
 }
 
 /*FOR MORE STYLING*/
-.for-more {
+/*.for-more {
 	display: flex;
 	flex-direction: column;
 	padding: 40px 20px;
 }
+*/
 
-.for-more-text {
+.more-heading {
 	background-color: #104f2c;
 	width: 130px;
 	margin-bottom: 20px;
@@ -364,23 +412,22 @@ ul {
 
 .social-icons-bottom {
 	display: flex;
-	margin: 0;
-	/*max-width: 60%;*/
-	/*align-self: center;
-    justify-content: space-between;
-    color: #104F2C;
-    width: 80%;
-    margin-bottom: 40px;*/
+	justify-content: space-evenly;
+	width: 100%;
 }
 
 .icon-text-wrapper {
+	margin: 15px 5px;
 	text-decoration: none;
 	color: #104f2c;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
 }
 
 .social-icons-bottom i {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border: 3px solid #104f2c;
@@ -390,8 +437,7 @@ ul {
 	width: 59px;
 	font-size: 29px;
 	padding: 10px;
-	margin-right: 5px;
-	margin-bottom: 5px;
+	margin: 0;
 }
 
 .social-icons-bottom p {
@@ -400,6 +446,7 @@ ul {
 	text-transform: uppercase;
 	font-size: 11px;
 	font-weight: bold;
+	/*width: 100px;*/
 }
 
 /*FOOTER STYLING*/
@@ -425,29 +472,18 @@ address a {
 
 /***** MEDIA QUERIES TABLET ******/
 @media (min-width: 768px) {
-	.summary-section p,
-	.tech-methods,
-	.other-projects-wrapper,
-	.all-skills-wrapper,
-	.social-icons-bottom {
+	.header-wrapper,
+	.content {
 		max-width: 60%;
-	}
-
-	.summary-figure {
-		left: 177px;
-	}
-
-	.f-project {
-		width: 42%;
-		margin: 10px;
-		display: flex;
-		flex-direction: column;
 	}
 }
 
 /* MEDIA QUERIES DESKTOP */
 @media (min-width: 1024px) {
-	.summary-figure {
-		left: 231px;
+	.f-project {
+		width: 40%;
+		margin: 25px;
+		display: flex;
+		flex-direction: column;
 	}
 }

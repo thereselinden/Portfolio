@@ -338,7 +338,6 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	/*padding: 40px;*/
 }
 
 .project {
@@ -474,7 +473,11 @@ address a {
 @media (min-width: 768px) {
 	.header-wrapper,
 	.content {
-		max-width: 60%;
+		width: 60%;
+	}
+
+	.other-projects-wrapper {
+		align-items: flex-start;
 	}
 }
 

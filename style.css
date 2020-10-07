@@ -64,8 +64,12 @@ p {
 
 /*HEADER STYLING*/
 header {
-    background-image: url('./images/nature-hero.jpg');
+    background-image: url('./images/forest-hero.jpg');
     background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: local; 
+    background-position-x: center; 
+    background-position-y: 60%;
     height: 60vh;
     padding-top: 60px;
     width: auto;
@@ -159,7 +163,7 @@ header img {
 
 
 /*FEATURED PROJECT SECTION*/
-.featured-projects {
+.featured-projects, .other-projects {
     background-color: #F1F2F3;
     font-family: 'Montserrat';
     display: flex;
@@ -263,11 +267,13 @@ img {
     color:  #104F2C;
 }
 
+/*
 .other-projects-wrapper {
     text-decoration: none;
     color: inherit;
     margin: 0;
 }
+*/
 
 /*MY THOUGHTS STYLING*/
 .my-thoughts {
@@ -368,7 +374,7 @@ ul {
 
 /*FOOTER STYLING*/
 footer {
-    background: #6F8494;
+    background: #8C8C94;
     color: #fff;
     padding: 40px;
 }

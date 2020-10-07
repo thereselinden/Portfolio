@@ -14,12 +14,14 @@ h1 {
     margin-top: 15px;
     font-size: 40px;
     font-weight: bold;
+    line-height: 49px;
 }
 
 h2 {
     margin-top: 0;
     font-size: 21px;
     font-weight: bold;
+    line-height: 29px;
 }
 
 h3 {
@@ -29,36 +31,28 @@ h3 {
     text-transform: uppercase;
     font-size: 22px;
     font-weight: bold;
+    line-height: 27px;
     height: auto;
     /*margin: 50px 40px 0 40px;*/
     padding: 10px 15px;
 }
 
 h4 {
+    color: #104F2C;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+h5 {
     display: flex;
     justify-content: center;
     align-self: center;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 21px;
     font-weight: bold;
     height: auto;
-    margin: 50px 40px 0 40px;
+    /*margin: 50px 40px 0 40px;*/
     padding: 10px 15px;
-}
-
-h5 {
-    background: #FDDFE7;
-    padding: 8px 12px;    
-    border-radius: 3px;
-    margin: 0 5px 0 0;
-    text-transform: uppercase;
-    font-weight: 200;
-}
-
-h6 {
-    color: #104F2C;
-    font-size: 17px;
-    line-height: 29px;
 }
 
 p {
@@ -211,10 +205,10 @@ img {
     display: flex;
     align-items: center;
     bottom: 0;
-    background: rgb(99 96 96 / 50%);
-    background: rgba;
+    /*background: rgb(99 96 96 / 50%);*/
+    background: rgba(0,0,0,0.38);
     opacity: 1;
-    color: white;
+    color: rgb(104, 104, 104);
     font-size: 20px;
     text-align: center;
     width: 100%;
@@ -230,7 +224,7 @@ img {
 
 .arrow {
     all: unset;
-    color: #104F2C;
+    color:  #104F2C;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -243,7 +237,7 @@ img {
 }
 
 .project-description span {
-    color: #104F2C;
+    color:  #104F2C;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -254,10 +248,19 @@ img {
     width: 100%;
 }
 
+.method-wrapper p {
+    background: #FDDFE7;
+    padding: 1px 8px;    
+    border-radius: 3px;
+    margin: 0 5px 0 0;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
 /*OTHER PROJECTS STYLING*/
 .other-projects-text {
     width: 260px;
-    color: #104F2C;
+    color:  #104F2C;
 }
 
 .other-projects-wrapper {
@@ -291,7 +294,7 @@ img {
 }
 
 .skills-text {
-    background-color: #104F2C;
+    background-color:#104F2C;
     width: 80px;
     margin-bottom: 20px;
     color: #fff;
@@ -310,15 +313,15 @@ ul {
     line-height: 29px;
 }
 
-
 /*FOR MORE STYLING*/
 .for-more {
     display: flex;
     flex-direction: column;
+    padding: 40px 20px;
 }
 
 .for-more-text {
-    background-color: #104F2C;
+    background-color:  #104F2C;
     width: 130px;
     margin-bottom: 20px;
     color: #fff;
@@ -326,16 +329,17 @@ ul {
 
 .social-icons-bottom {
     display: flex;
-    align-self: center;
+    margin: 0;
+    /*align-self: center;
     justify-content: space-between;
     color: #104F2C;
     width: 80%;
-    margin-bottom: 40px;
+    margin-bottom: 40px;*/
 }
 
 .icon-text-wrapper {
     text-decoration: none;
-    color: #104F2C;
+    color:  #104F2C;
 }
 
 .social-icons-bottom i {
@@ -343,12 +347,12 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid #104F2C;
-    color: #104F2C;
+    border: 3px solid  #104F2C;
+    color:  #104F2C;
     border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    font-size: 22px;
+    height: 58px;
+    width: 59px;
+    font-size: 29px;
     padding: 10px;
     margin-right: 5px;
     margin-bottom: 5px
@@ -357,15 +361,28 @@ ul {
 .social-icons-bottom p {
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
 }
-
 
 /*FOOTER STYLING*/
 footer {
-    background: #0E5B5C;
+    background: #77876D;
     color: #fff;
+    padding: 40px;
 }
 
 address {
-    
+    text-align: center;
+    font-style: normal;
+}
+
+address span {
+    font-weight: bold;
+}
+
+address a {
+    text-decoration: none;
+    color: white;
 }

@@ -122,7 +122,7 @@ header {
 
 .name {
 	font-weight: bold;
-	text-align: end;
+	margin-left: 20px;
 }
 
 header img {
@@ -137,7 +137,7 @@ header img {
 }
 
 /*MAIN SECTIONS*/
-.main-wrapper {
+.main-section {
 	padding: 60px 40px;
 }
 
@@ -147,7 +147,7 @@ header img {
 	background: #d9dad2;
 }
 
-.content {
+.main-section-content {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -191,7 +191,7 @@ header img {
 }
 
 /*FEATURED PROJECT SECTION*/
-.project-wrapper,
+.projects-container,
 .thoughts-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -199,11 +199,15 @@ header img {
 	width: 100%;
 }
 
-.a-wrapper {
+.link-wrapper {
 	text-decoration: none;
 	color: #000000;
-	margin: 10px 0 0 0;
+	/* margin: 10px 0 0 0; */
 	font-family: 'Roboto';
+}
+
+.display-none {
+	display: none;
 }
 
 /*FEAUTRED PROJECT OVERLAY STYLING*/
@@ -314,7 +318,7 @@ img {
 	flex-direction: column;
 }
 
-.skills .content {
+.skills .main-section-content {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
@@ -325,17 +329,6 @@ img {
 	text-align: center;
 	width: 50%;
 }
-
-/* .skill-wrapper-code p,
-.tool p,
-.more p {
-	color: #104f2c;
-	font-size: 17px;
-	line-height: 29px;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 15px;
-} */
 
 ul {
 	list-style: none;
@@ -406,12 +399,8 @@ address a {
 /***** MEDIA QUERIES TABLET ******/
 @media (min-width: 768px) {
 	.header-wrapper,
-	.content {
+	.main-section-content {
 		width: 60%;
-	}
-
-	.other-projects-wrapper {
-		align-items: flex-start;
 	}
 }
 
@@ -453,12 +442,17 @@ address a {
 
 	.tech span {
 		color: #104f2c;
-		font-size: 22px;
+		font-weight: bold;
 	}
 
 	.wrapper {
 		width: 40%;
 		margin: 25px;
+	}
+
+	.display-none {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.skill-wrapper-code {

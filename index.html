@@ -3,6 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Therese Lindén's portfolio" />
+		<meta
+			name="keywords"
+			content="Portfolio, Frontend, Developer, Programming, Design"
+		/>
+		<meta name="author" content="Therese Lindén" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
 			rel="stylesheet"
@@ -21,44 +27,46 @@
 
 	<body>
 		<!------HEADER------->
-		<header class="top-section">
+		<header>
 			<section class="header-wrapper">
-				<article class="social-icons-top">
+				<!------HEADER-links------->
+				<section class="social-icons-top">
 					<a href="https://www.linkedin.com/in/therese-lindén-08569592">
-						<!---norefferal, remove the class--->
 						<i class="fa fa-linkedin"></i>
-						<span class="sr-only">Link to LinkedIn</span>
+						<span class="sr-only">Link to LinkedIn profile</span>
 					</a>
-					<a href="https://github.com/thereselinden" target="blank">
+					<a href="https://github.com/thereselinden">
 						<i class="fa fa-github"></i>
-						<span class="sr-only">GitHub</span>
+						<span class="sr-only">Link to GitHub profile</span>
 					</a>
-					<a href="#" target="blank">
-						<i class="fa fa-stack-overflow" aria-hidden="true"></i>
-						<span class="sr-only">Stack Overflow</span>
+					<a
+						href="https://stackoverflow.com/users/14058958/therese-l?tab=profile"
+					>
+						<i class="fa fa-stack-overflow"></i>
+						<span class="sr-only">Link to Stack Overflow profile</span>
 					</a>
-				</article>
-
-				<article class="main-content">
+				</section>
+				<!------HEADER text------->
+				<section class="main-content">
 					<p tabindex="0">
 						Portfolio: <span class="name">Therese Lindén</span>
 					</p>
-					<!---how to separate these? one regular, one bold, space between...--->
 					<h1 tabindex="0">frontend developer</h1>
 					<h2 tabindex="0">with background in banking</h2>
-				</article>
+				</section>
+				<!------HEADER image------->
 				<img
 					tabindex="0"
 					src="./images/profile-picture.jpg"
-					alt="profile picture of Therese Lindén"
+					alt="Profile picture of Therese Lindén"
 				/>
 			</section>
 		</header>
 
 		<main>
 			<!-------SUMMARY SECTION------->
-			<section class="main-wrapper summary">
-				<div class="content">
+			<section class="main-section summary">
+				<div class="main-section-content">
 					<p tabindex="0">
 						<span class="line"></span>
 						<span class="dot"></span>
@@ -71,8 +79,8 @@
 			</section>
 
 			<!-------TECH SECTION------->
-			<section class="main-wrapper tech">
-				<div class="content">
+			<section class="main-section tech">
+				<div class="main-section-content">
 					<h3 tabindex="0">Tech</h3>
 					<p tabindex="0">
 						HTML, CSS, Flexbox, <span>JavaScript</span>, ES6,
@@ -83,17 +91,17 @@
 			</section>
 
 			<!-------FEATURED PROJECT SECTION------->
-			<section class="main-wrapper featured">
-				<div class="content">
+			<section class="main-section featured">
+				<div class="main-section-content">
 					<h3 tabindex="0">Featured projects</h3>
-					<div class="project-wrapper">
+					<div class="projects-container">
 						<article class="wrapper">
-							<a href="https.google.se" target="blank" class="a-wrapper">
+							<a href="https.google.se" class="link-wrapper">
 								<div class="overlay-container">
 									<img
-										src="./images/profile-picture.jpg"
+										src="./images/weather-app.jpg"
 										alt="picture of weather app created"
-										alt=""
+										aria-label=""
 										class="image"
 									/>
 									<div class="overlay">
@@ -108,18 +116,18 @@
 									</p>
 								</div>
 							</a>
-							<div aria-hidden="true" class="tag-wrapper">
+							<div class="tag-wrapper">
 								<p>HTML5</p>
 								<p>CSS</p>
 								<p>JavaScript</p>
 							</div>
 						</article>
 
-						<article class="wrapper">
-							<a href="https.google.se" target="blank" class="a-wrapper">
+						<article class="wrapper display-none">
+							<a href="https.google.se" target="blank" class="link-wrapper">
 								<div class="overlay-container">
 									<img
-										src="./images/profile-picture.jpg"
+										src="./images/reveal-mystery-s.jpg"
 										alt=""
 										class="image"
 									/>
@@ -131,7 +139,7 @@
 									<p>
 										<span class="project-title">Cluedo game.</span>
 										description of project, keep it short hej hej
-										<span class="arrow"> >></span>
+										<span aria-hidden="true" class="arrow"> >></span>
 									</p>
 								</div>
 							</a>
@@ -146,15 +154,15 @@
 			</section>
 
 			<!---OTHER PROJECTS SECTION--->
-			<section class="main-wrapper other">
-				<div class="content">
+			<section class="main-section other">
+				<div class="main-section-content">
 					<h3 tabindex="0" class="other-heading">Other projects</h3>
 					<article class="project">
 						<a href="#" target="blank" class="description">
 							<p>
 								<span class="project-title">Cluedo game.</span>
 								description of project, keep it short
-								<span class="arrow"> >></span>
+								<span aria-hidden="true" class="arrow"> >></span>
 							</p>
 						</a>
 						<div class="tag-wrapper">
@@ -169,7 +177,7 @@
 							<p>
 								<span class="project-title">Cluedo game.</span>
 								description of project, keep it short
-								<span class="arrow"> >></span>
+								<span aria-hidden="true" class="arrow"> >></span>
 							</p>
 						</a>
 						<div class="tag-wrapper">
@@ -184,7 +192,7 @@
 							<p>
 								<span class="project-title">Cluedo game.</span>
 								description of project, keep it short
-								<span class="arrow"> >></span>
+								<span aria-hidden="true" class="arrow"> >></span>
 							</p>
 						</a>
 						<div class="tag-wrapper">
@@ -197,8 +205,8 @@
 			</section>
 
 			<!-------MY-THOUGHTS------->
-			<section class="main-wrapper thoughts">
-				<div class="content">
+			<section class="main-section thoughts">
+				<div class="main-section-content">
 					<h3 tabindex="0">My thoughts</h3>
 					<div class="thoughts-wrapper">
 						<article class="wrapper" tabindex="0">
@@ -207,16 +215,18 @@
 							<h4>How to stop being scared: Learning to love code</h4>
 							<p>
 								Writing code is less about “just working”. Instead, it’s much
-								more about creativity. <span class="arrow"> >></span>
+								more about creativity.
+								<span aria-hidden="true" class="arrow"> >></span>
 							</p>
 						</article>
-						<article class="wrapper" tabindex="0">
+						<article class="wrapper display-none" tabindex="0">
 							<img src="./images/my-thoughts-small.png" alt />
 							<p class="article-time">Dec 2019</p>
 							<h4>How to stop being scared: Learning to love code</h4>
 							<p>
 								Writing code is less about “just working”. Instead, it’s much
-								more about creativity. <span class="arrow"> >></span>
+								more about creativity.
+								<span aria-hidden="true" class="arrow"> >></span>
 							</p>
 						</article>
 					</div>
@@ -224,24 +234,33 @@
 			</section>
 
 			<!-------MORE-THOUGHTS------->
-			<section class="main-wrapper more-thoughts">
-				<div class="content">
+			<section class="main-section more-thoughts">
+				<div class="main-section-content">
 					<h3 tabindex="0" class="other-heading">More thoughts</h3>
 					<article class="project">
-						<a href="#" target="blank" class="a-wrapper">
+						<a href="#" target="blank" class="description">
 							<p>
 								<span class="article-time">sep 2019.</span>
 								5 Apps that will make coding easier.
-								<span class="arrow">>></span>
+								<span aria-hidden="true" class="arrow">>></span>
 							</p>
 						</a>
 					</article>
 					<article class="project">
-						<a href="#" target="blank" class="a-wrapper">
+						<a href="#" target="blank" class="description">
 							<p>
 								<span class="article-time">sep 2019.</span>
 								5 Apps that will make coding easier.
-								<span class="arrow">>></span>
+								<span aria-hidden="true" class="arrow">>></span>
+							</p>
+						</a>
+					</article>
+					<article class="project">
+						<a href="#" target="blank" class="description">
+							<p>
+								<span class="article-time">sep 2019.</span>
+								5 Apps that will make coding easier.
+								<span aria-hidden="true" class="arrow">>></span>
 							</p>
 						</a>
 					</article>
@@ -249,9 +268,9 @@
 			</section>
 
 			<!-------SKILLS SECTION------->
-			<section class="main-wrapper skills">
+			<section class="main-section skills">
 				<h3 tabindex="0">Skills</h3>
-				<div class="content">
+				<div class="main-section-content">
 					<div class="skill-wrapper-code">
 						<h5 tabindex="0">Code</h5>
 						<ul tabindex="0">
@@ -293,13 +312,12 @@
 			</section>
 
 			<!-------FOR MORE SECTION------->
-			<section class="main-wrapper more">
-				<div class="content">
+			<section class="main-section more">
+				<div class="main-section-content">
 					<h3 tabindex="0">For more</h3>
-					<article class="social-icons-bottom">
+					<div class="social-icons-bottom">
 						<a
 							href="https://www.linkedin.com/in/therese-lindén-08569592"
-							target="blank"
 							class="icon-text-wrapper"
 						>
 							<i class="fa fa-linkedin"></i>
@@ -307,8 +325,7 @@
 							<p>LinkedIn</p>
 						</a>
 						<a
-							href="https://www.linkedin.com/in/therese-lindén-08569592"
-							target="blank"
+							href="https://github.com/thereselinden"
 							class="icon-text-wrapper"
 						>
 							<i class="fa fa-github"></i>
@@ -316,7 +333,7 @@
 							<p>GitHub</p>
 						</a>
 						<a
-							href="https://www.linkedin.com/in/therese-lindén-08569592"
+							href="https://stackoverflow.com/users/14058958/therese-l?tab=profile"
 							target="blank"
 							class="icon-text-wrapper"
 						>
@@ -324,14 +341,14 @@
 							<i class="fa fa-stack-overflow"></i>
 							<p>StackOverflow</p>
 						</a>
-					</article>
+					</div>
 				</div>
 			</section>
 		</main>
 
 		<!-------FOOTER------->
 		<footer>
-			<h6 tabindex="0">Contact</h6>
+			<!-- <h6 tabindex="0">Contact</h6> -->
 			<address>
 				<p tabindex="0"><span>Therese Lindén</span></p>
 				<p tabindex="0">+46 76 11 06 338</p>

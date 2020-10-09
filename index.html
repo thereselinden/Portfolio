@@ -22,7 +22,7 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 		<link rel="stylesheet" href="./style.css" />
-		<title>Therese - Portfolio</title>
+		<title>Therese: Portfolio</title>
 	</head>
 
 	<body>
@@ -93,15 +93,21 @@
 			<!-------FEATURED PROJECT SECTION------->
 			<section class="main-section featured">
 				<div class="main-section-content">
-					<h3 tabindex="0">Featured projects</h3>
+					<h3 tabindex="0" aria-label="Projects I have created">
+						Featured projects
+					</h3>
 					<div class="projects-container">
 						<article class="wrapper">
-							<a href="https.google.se" class="link-wrapper">
+							<a
+								href="https.google.se"
+								class="link-wrapper"
+								aria-label="Link to Weather App on Git Hub"
+							>
 								<div class="overlay-container">
 									<img
 										src="./images/weather-app.jpg"
 										alt="picture of weather app created"
-										aria-label=""
+										aria-hidden="true"
 										class="image"
 									/>
 									<div class="overlay">
@@ -109,26 +115,36 @@
 									</div>
 								</div>
 								<div class="description">
-									<p>
+									<p tabindex="0">
 										<span class="project-title">Weather App.</span>
 										Web app built in Javascript using open weather API
 										<span aria-hidden="true" class="arrow"> >></span>
 									</p>
 								</div>
 							</a>
-							<div class="tag-wrapper">
-								<p>HTML5</p>
-								<p>CSS</p>
-								<p>JavaScript</p>
+							<div
+								class="tag-wrapper"
+								tabindex="0"
+								aria-label="tech used in the project"
+							>
+								<p tabindex="0">HTML5</p>
+								<p tabindex="0">CSS</p>
+								<p tabindex="0">JavaScript</p>
 							</div>
 						</article>
 
 						<article class="wrapper display-none">
-							<a href="https.google.se" target="blank" class="link-wrapper">
+							<a
+								href="https.google.se"
+								target="blank"
+								class="link-wrapper"
+								aria-label="Link to Cluedo game on Git Hub"
+							>
 								<div class="overlay-container">
 									<img
 										src="./images/reveal-mystery-s.jpg"
-										alt=""
+										alt="Picture of cluedo game created"
+										aria-hidden="true"
 										class="image"
 									/>
 									<div class="overlay">
@@ -136,17 +152,21 @@
 									</div>
 								</div>
 								<div class="description">
-									<p>
+									<p tabindex="0">
 										<span class="project-title">Cluedo game.</span>
 										description of project, keep it short hej hej
 										<span aria-hidden="true" class="arrow"> >></span>
 									</p>
 								</div>
 							</a>
-							<div class="tag-wrapper">
-								<p>HTML5</p>
-								<p>CSS</p>
-								<p>JavaScript</p>
+							<div
+								class="tag-wrapper"
+								tabindex="0"
+								aria-label="tech used in the project"
+							>
+								<p tabindex="0">HTML5</p>
+								<p tabindex="0">CSS</p>
+								<p tabindex="0">JavaScript</p>
 							</div>
 						</article>
 					</div>
@@ -205,24 +225,35 @@
 			</section>
 
 			<!-------MY-THOUGHTS------->
+			<!-- SCREEN READER DOES NOT WORK HERE -->
 			<section class="main-section thoughts">
 				<div class="main-section-content">
-					<h3 tabindex="0">My thoughts</h3>
+					<h3 tabindex="0" aria-label="My thoughts about code">My thoughts</h3>
 					<div class="thoughts-wrapper">
-						<article class="wrapper" tabindex="0">
-							<img src="./images/my-thoughts-small.png" alt />
-							<p class="article-time">Dec 2019</p>
-							<h4>How to stop being scared: Learning to love code</h4>
-							<p>
-								Writing code is less about “just working”. Instead, it’s much
-								more about creativity.
-								<span aria-hidden="true" class="arrow"> >></span>
-							</p>
+						<article class="wrapper">
+							<a href="#" class="description">
+								<img
+									src="./images/my-thoughts-small.png"
+									alt=""
+									aria-hidden="true"
+								/>
+								<p class="article-time" aria-hidden="true">Dec 2019</p>
+								<h4>How to stop being scared: Learning to love code.</h4>
+								<p>
+									Writing code is less about “just working”. Instead, it’s much
+									more about creativity.
+									<span aria-hidden="true" class="arrow"> >></span>
+								</p>
+							</a>
 						</article>
-						<article class="wrapper display-none" tabindex="0">
-							<img src="./images/my-thoughts-small.png" alt />
-							<p class="article-time">Dec 2019</p>
-							<h4>How to stop being scared: Learning to love code</h4>
+						<article class="wrapper display-none" tabindex="0" a href="#">
+							<img
+								src="./images/my-thoughts-small.png"
+								alt=""
+								aria-hidden="true"
+							/>
+							<p class="article-time" aria-hidden="true">Dec 2019</p>
+							<h4>How to stop being scared: Learning to love code.</h4>
 							<p>
 								Writing code is less about “just working”. Instead, it’s much
 								more about creativity.
@@ -321,25 +352,25 @@
 							class="icon-text-wrapper"
 						>
 							<i class="fa fa-linkedin"></i>
-							<span class="sr-only">LinkedIn</span>
-							<p>LinkedIn</p>
+							<span class="sr-only">Link to my LinkedIn profile</span>
+							<p aria-hidden="true">LinkedIn</p>
 						</a>
 						<a
 							href="https://github.com/thereselinden"
 							class="icon-text-wrapper"
 						>
 							<i class="fa fa-github"></i>
-							<span class="sr-only">GitHub</span>
-							<p>GitHub</p>
+							<span class="sr-only">Link to my GitHub profile</span>
+							<p aria-hidden="true">GitHub</p>
 						</a>
 						<a
 							href="https://stackoverflow.com/users/14058958/therese-l?tab=profile"
 							target="blank"
 							class="icon-text-wrapper"
 						>
-							<span class="sr-only">StackOverflow</span>
+							<span class="sr-only">Link to my StackOverflow profile</span>
 							<i class="fa fa-stack-overflow"></i>
-							<p>StackOverflow</p>
+							<p aria-hidden="true">StackOverflow</p>
 						</a>
 					</div>
 				</div>
@@ -348,7 +379,7 @@
 
 		<!-------FOOTER------->
 		<footer>
-			<!-- <h6 tabindex="0">Contact</h6> -->
+			<h6 tabindex="0">Contact</h6>
 			<address>
 				<p tabindex="0"><span>Therese Lindén</span></p>
 				<p tabindex="0">+46 76 11 06 338</p>

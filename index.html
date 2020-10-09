@@ -115,7 +115,8 @@
 									</div>
 								</div>
 								<div class="description">
-									<p tabindex="0">
+									<p>
+										<!-- removed tabindex here -->
 										<span class="project-title">Weather App.</span>
 										Web app built in Javascript using open weather API
 										<span aria-hidden="true" class="arrow"> >></span>
@@ -231,7 +232,7 @@
 					<h3 tabindex="0" aria-label="My thoughts about code">My thoughts</h3>
 					<div class="thoughts-wrapper">
 						<article class="wrapper">
-							<a href="#" class="description">
+							<a href="#" class="link-wrapper">
 								<img
 									src="./images/my-thoughts-small.png"
 									alt=""
@@ -246,19 +247,21 @@
 								</p>
 							</a>
 						</article>
-						<article class="wrapper display-none" tabindex="0" a href="#">
-							<img
-								src="./images/my-thoughts-small.png"
-								alt=""
-								aria-hidden="true"
-							/>
-							<p class="article-time" aria-hidden="true">Dec 2019</p>
-							<h4>How to stop being scared: Learning to love code.</h4>
-							<p>
-								Writing code is less about “just working”. Instead, it’s much
-								more about creativity.
-								<span aria-hidden="true" class="arrow"> >></span>
-							</p>
+						<article class="wrapper display-none" tabindex="0">
+							<a href="#" class="link-wrapper">
+								<img
+									src="./images/my-thoughts-small.png"
+									alt=""
+									aria-hidden="true"
+								/>
+								<p class="article-time" aria-hidden="true">Dec 2019</p>
+								<h4>How to stop being scared: Learning to love code.</h4>
+								<p>
+									Writing code is less about “just working”. Instead, it’s much
+									more about creativity.
+									<span aria-hidden="true" class="arrow"> >></span>
+								</p>
+							</a>
 						</article>
 					</div>
 				</div>

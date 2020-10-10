@@ -40,28 +40,24 @@ h3 {
 }
 
 h4 {
+	color: #104f2c;
+	font-size: 22px;
+	margin: 0 0 40px 0;
+	align-self: center;
+}
+
+h5 {
 	line-height: 32px;
 	width: 100%;
 }
 
-h5 {
+h6 {
 	color: #104f2c;
 	font-size: 17px;
 	line-height: 29px;
 	font-weight: bold;
 	text-align: center;
 	margin-top: 15px;
-}
-
-h6 {
-	display: flex;
-	justify-content: center;
-	align-self: center;
-	text-transform: uppercase;
-	font-size: 21px;
-	font-weight: bold;
-	height: auto;
-	padding: 10px 15px;
 }
 
 p {
@@ -191,18 +187,16 @@ header img {
 }
 
 /*FEATURED PROJECT SECTION*/
-.projects-container,
-.thoughts-wrapper {
+.content-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
 }
 
 .link-wrapper {
 	text-decoration: none;
 	color: #000000;
-	/* margin: 10px 0 0 0; */
 	font-family: 'Roboto';
 }
 
@@ -287,11 +281,6 @@ img {
 .other,
 .more-thoughts {
 	padding-top: 0;
-}
-
-.other-heading {
-	color: #104f2c;
-	background: none;
 }
 
 .project {
@@ -382,6 +371,17 @@ footer {
 	padding: 40px;
 }
 
+.footer-header {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: bold;
+	height: auto;
+	padding: 10px 15px;
+}
+
 address {
 	text-align: center;
 	font-style: normal;
@@ -440,10 +440,6 @@ address a {
 		bottom: -270px;
 	}
 
-	.project {
-		margin: 0 40px;
-	}
-
 	.tech span {
 		color: #104f2c;
 		font-weight: bold;
@@ -451,7 +447,6 @@ address a {
 
 	.wrapper {
 		width: 40%;
-		margin: 25px;
 	}
 
 	.display-none {

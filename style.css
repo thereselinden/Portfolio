@@ -49,15 +49,7 @@ h4 {
 h5 {
 	line-height: 32px;
 	width: 100%;
-}
-
-h6 {
-	color: #104f2c;
-	font-size: 17px;
-	line-height: 29px;
-	font-weight: bold;
-	text-align: center;
-	margin-top: 15px;
+	font-size: 21px;
 }
 
 p {
@@ -317,6 +309,15 @@ img {
 .tool-more-wrapper {
 	text-align: center;
 	width: 50%;
+}
+
+.skills p {
+	color: #104f2c;
+	font-size: 17px;
+	line-height: 29px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 15px;
 }
 
 ul {

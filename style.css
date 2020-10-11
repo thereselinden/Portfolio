@@ -180,7 +180,8 @@ header img {
 .content-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	/* justify-content: space-between; */
+	justify-content: center;
 	width: 100%;
 }
 
@@ -448,9 +449,17 @@ address a {
 		width: 40%;
 	}
 
+	.content-container {
+		justify-content: space-between;
+	}
+
 	.display-none {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.display-none a {
+		margin: 0;
 	}
 
 	.skill-wrapper-code {

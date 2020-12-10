@@ -435,7 +435,7 @@ address a {
   }
 
   .thoughts {
-    grid-area: 2/3;
+    /* grid-area: 1/3; */
   }
 }
 

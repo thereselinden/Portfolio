@@ -433,10 +433,6 @@ address a {
   .other-display-none {
     display: none;
   }
-
-  .thoughts {
-    /* grid-area: 1/3; */
-  }
 }
 
 /* MEDIA QUERIES DESKTOP */
